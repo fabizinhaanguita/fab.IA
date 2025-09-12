@@ -73,3 +73,23 @@ alternativas:[
             }
         ]
     },
+];
+
+
+let atual = 0;
+let perguntasAtual;
+let historiaFinal="";
+
+function mostraPergunta(){
+    if(atual >perguntas.length){
+        mostraResultado();
+        return;
+    }
+    perguntaAtual=perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent="";
+    mostraAlternativas();
+}
+ function mostraAlternativas(){
+    for(const alternativa of perguntasAtual)
+ }
